@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{enumitem}
+
+% Settings 
+\input{sections/settings/variables}
+\input{sections/settings/commands}
+
+% Title 
+\input{sections/main/title}
+
+\begin{document}
+%% ========================================================================= %%
+
+%% Title page %%
+\maketitle
+
+%% Table of contents %%
+\tableofcontents
+
+%% Main sections %%
+\newpage
+\input{sections/sample/sample}
+\input{sections/manual/manual}
+
+% Chapters
+\input{sections/main/chapter1/chap1_main}
+\input{sections/main/chapter2/chap2_main}
+
+%% Appendices %%
+\input{sections/main/footnotes}
+
+%% ========================================================================= %%
+\end{document}
